@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tutoria 3: APP1-ImageView, Checkbox, RadioButton e ImageButton</string>
+    <string name="tit_opciones_visualizar">Opciones del fondo</string>
+    <string name="op1_check">Fondo rojo</string>
+    <string name="op2_check">Transparente</string>
+    <string name="op3_check">Activity Verde</string>
+    <string name="centrado">Centrado sin estirar</string>
+    <string name="estirado">Estirado</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/llLayoutActivity"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvTituloOpcionesVisualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tit_opciones_visualizar"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <CheckBox
+            android:id="@+id/cbOp1Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvTituloOpcionesVisualizar"
+            android:text="@string/op1_check" />
+
+        <CheckBox
+            android:id="@+id/cbOp2Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTituloOpcionesVisualizar"
+            android:layout_centerHorizontal="true"
+            android:text="@string/op2_check" />
+
+        <CheckBox
+            android:id="@+id/cbOp3Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvTituloOpcionesVisualizar"
+            android:text="@string/op3_check" />
+
+        <ImageView
+            android:id="@+id/ivImagen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cbOp2Check"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+        <RadioGroup
+            android:id="@+id/rgOpcionesCentrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbCentrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/centrado" />
+
+            <RadioButton
+                android:id="@+id/rbEstirado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/estirado" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tlBotonera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/trFila1Botonera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+
+            >
+
+            <ImageButton
+                android:id="@+id/ibImagenMortadelo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:onClick="cargarImagen"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mortadelo" />
+
+            <ImageButton
+                android:id="@+id/ibImagenMafalda"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:onClick="cargarImagen"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mafalda" />
+
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
